@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Guru's Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Beauty Guru's Haven</h1>
+        <p>Your ultimate destination for beauty tips and advice!</p>
+    </header>
+
+    <main>
+        <aside class="left-sidebar">
+            <h2>Explore Beauty Topics</h2>
+            <ul id="topic-list">
+                <li><a href="#" data-topic="skincare">Skincare</a></li>
+                <li><a href="#" data-topic="body">Body Shape</a></li>
+                <li><a href="#" data-topic="hair">Hair</a></li>
+                <li><a href="#" data-topic="nails">Nails</a></li>
+                <li><a href="#" data-topic="clothing">Clothing</a></li>
+            </ul>
+
+            <div id="topic-details">
+                <!-- Details for selected topic will load here -->
+            </div>
+        </aside>
+
+        <section class="main-content">
+            <div class="chat-container">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Ask me anything about beauty!">
+                <button id="send-button" class="chat-button">Send</button>
+
+                <div class="chat-response" id="chat-response">
+                    <!-- Chat responses will appear here -->
+                </div>
+            </div>
+
+            <div class="random-tips">
+                <h2>Random Beauty Tips</h2>
+                <ul id="random-tip-list">
+                    <li>Drink plenty of water for glowing skin.</li>
+                    <li>Always remove makeup before bed.</li>
+                    <li>Use sunscreen daily.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Beauty Guru's Haven</p>
+    </footer>
+
+    <script src="api_key.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5f6; /* Pastel Background */
+    color: #333;
+}
+
+header {
+    background-color: #ffc6d9; /* Light Pastel Pink */
+    color: #6b5b95;  /* Darker Pastel Purple */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+.left-sidebar {
+    width: 25%;
+    background-color: #fff; /* White Sidebar */
+    padding: 1rem;
+    border-right: 1px solid #ddd; /* Light Border */
+    border-radius: 10px; /* Rounded Corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle Shadow */
+}
+
+.main-content {
+    width: 75%;
+    padding: 1rem;
+}
+
+#topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+#topic-list li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #6b5b95; /* Darker Pastel Purple */
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+#topic-list li a:hover {
+    background-color: #f0e6ef; /* Lighter Pastel Purple */
+}
+
+.chat-container {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* More Rounded Corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.chat-button {
+    background-color: #a8d5ba; /* Light Pastel Green */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.chat-button:hover {
+    background-color: #8ac6a3; /* Darker Pastel Green */
+}
+
+.chat-response {
+    margin-top: 1rem;
+}
+
+.chat-bubble {
+    background-color: #e0f2f1; /* Light Pastel Teal */
+    padding: 0.75rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.random-tips {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.random-tips h2 {
+    color: #6b5b95;
+    margin-bottom: 0.75rem;
+}
+
+.random-tips li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #6b5b95; /* Darker Pastel Purple */
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-sidebar, .main-content {
+        width: 100%;
+    }
+}
